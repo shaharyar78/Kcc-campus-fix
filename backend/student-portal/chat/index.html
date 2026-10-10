@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a2141">
+  <title>Student Discussion — CampusFix KCC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <main class="chat-shell">
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="CampusFix home"><span class="brand-mark">C<span>!</span></span><span>Campus<span class="brand-blue">Fix</span><small>KCC CAMPUS CARE</small></span></a>
+      <a class="back-link" href="../index.html">← Back to reports</a>
+    </header>
+    <section class="chat-card" aria-labelledby="chat-title">
+      <div class="chat-heading"><div><span class="eyebrow">KCC STUDENT COMMUNITY</span><h1 id="chat-title">Campus discussion</h1><p>Discuss campus issues and share helpful updates with other students.</p></div><span class="live-indicator"><i></i> Group chat</span></div>
+      <label class="name-label" for="student-name">Your display name</label>
+      <input id="student-name" class="name-input" maxlength="24" autocomplete="nickname" placeholder="Enter your name" required>
+      <div id="chat-messages" class="messages" role="log" aria-live="polite" aria-relevant="additions text" aria-label="Chat messages"><p class="loading">Loading discussion…</p></div>
+      <form id="chat-form" class="chat-form"><label class="sr-only" for="chat-input">Write a message</label><textarea id="chat-input" maxlength="500" rows="2" placeholder="Write a message…" required></textarea><div class="composer-footer"><span id="char-count">0 / 500</span><button id="send-button" type="submit">Send message <span aria-hidden="true">↗</span></button></div></form>
+      <p id="chat-status" class="status" role="status" aria-live="polite">Be respectful. Do not share private information.</p>
+    </section>
+    <footer>CampusFix · KCC Institute of Technology &amp; Management</footer>
+  </main>
+  <script src="chat.js"></script>
+</body>
+</html>

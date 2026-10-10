@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "reports": [
+    {
+      "id": "KCC-261010-91B9",
+      "building": "Building A",
+      "section": "A2",
+      "type": "Classroom",
+      "priority": "Normal",
+      "description": "not proper continue",
+      "photoName": "",
+      "photoUrl": "",
+      "status": "Received",
+      "date": "10 Oct 2026",
+      "createdAt": "2026-10-10T17:39:27.866Z",
+      "updatedAt": "2026-10-10T17:39:27.866Z"
+    }
+  ],
+  "chatMessages": []
+}

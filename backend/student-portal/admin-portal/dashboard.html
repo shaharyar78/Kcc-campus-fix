@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a2141"><title>Admin dashboard — CampusFix KCC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="dashboard-page">
+  <header class="admin-header"><a class="brand" href="../../index.html"><span class="brand-mark">C<span>!</span></span><span class="brand-name">Campus<span>Fix</span><small>KCC ADMIN</small></span></a><div class="header-actions"><a class="student-link" href="../../index.html">Student portal <span>↗</span></a><span class="admin-avatar">A</span><span class="admin-name">Administrator</span><button id="logout-button" class="logout-button">Log out</button></div></header>
+  <main class="dashboard-main"><div class="page-heading"><div><div class="eyebrow ink-eyebrow">CAMPUSFIX / ADMIN</div><h1>Report dashboard</h1><p>Review campus issues and keep their status up to date.</p></div><span class="today-label" id="today-label"></span></div>
+  <section class="stats-grid" aria-label="Report summary"><article class="stat-card"><span class="stat-label">TOTAL REPORTS</span><strong id="stat-total">0</strong><span class="stat-foot">All submitted issues</span></article><article class="stat-card"><span class="stat-label">NEEDS REVIEW</span><strong id="stat-review">0</strong><span class="stat-foot">Received or under review</span></article><article class="stat-card"><span class="stat-label">IN PROGRESS</span><strong id="stat-progress">0</strong><span class="stat-foot">Being worked on</span></article><article class="stat-card"><span class="stat-label">RESOLVED</span><strong id="stat-resolved">0</strong><span class="stat-foot">Marked as resolved</span></article></section>
+  <section class="reports-panel"><div class="panel-heading"><div><h2>All reports <span id="report-count" class="count-badge">0</span></h2><p>Update status as each issue moves forward.</p></div><button id="refresh-button" class="refresh-button">↻ Refresh</button></div><div class="filters"><label class="search-box"><span>⌕</span><input id="admin-search" type="search" placeholder="Search tracker ID, issue, building…"></label><select id="status-filter" aria-label="Filter by status"><option value="all">All statuses</option><option>Received</option><option>Under Review</option><option>Verified</option><option>In Progress</option><option>Resolved</option></select><select id="priority-filter" aria-label="Filter by priority"><option value="all">All priorities</option><option>Normal</option><option>Medium</option><option>High</option><option>Critical</option></select></div><div id="admin-report-list" class="admin-report-list"></div><div id="admin-empty" class="empty-admin" hidden><span>✳</span><h3>No reports found</h3><p>New student reports will appear here.</p><a href="../../index.html">Open student portal →</a></div></section>
+  <p class="storage-note"><span>ⓘ</span> Demo data is saved in backend/data.json. Set a private admin password before deployment.</p>
+  </main><div id="admin-toast" class="admin-toast" role="status" aria-live="polite"></div><script src="admin.js"></script>
+</body></html>
+
